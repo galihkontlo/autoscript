@@ -197,12 +197,14 @@ wget -O userlog $source/file/userlog.sh
 wget -O expdel $source/file/expdel.sh
 wget -O tendang $source/file/tendang.sh
 wget -O trial $source/file/trial.sh
-wget -O speedtest $source/file/speedtest.py
-echo "speedtest --share" | tee speedtest
+wget -O speedtest $source/file/speedtest_cli.py
+echo "python /usr/bin/speedtest.py --share" | tee speedtest
+wget -O speedtest $source/file/speedtest_cli.py
 chmod +x tambah
 chmod +x renew
 chmod +x expdel
 chmod +x speedtest
+chmod +x speedtest_cli.py
 chmod +x pass
 chmod +x tendang
 chmod +x trial
