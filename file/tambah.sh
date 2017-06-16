@@ -7,10 +7,9 @@ if [ $? -eq 0 ]; then
 	exit 1
 else
 	today="$(date +"%Y-%m-%d")"
-	expire=$(date -d "30 days" +"%Y-%m-%d")
+	expire=$(date -d "$3 days" +"%Y-%m-%d")
 	useradd -M -N -s /bin/false -e $expire $1
 	echo $1:$2 | chpasswd
-echo -e ""
 echo -e ""
 echo -e "-------------------------------------"
 echo -e "Data Login :"
