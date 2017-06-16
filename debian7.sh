@@ -198,6 +198,20 @@ echo "bash /etc/iptables.sh" >> /etc/rc.local
 echo "$ screen badvpn-udpgw --listen-addr 127.0.0.1:7300 > /dev/null &" >> /etc/rc.local
 echo "nohup ./cron.sh &" >> /etc/rc.local
 echo "exit 0" >> /etc/rc.local
+# script
+cd /usr/bin
+wget -O tambah $source/file/tambah.sh
+wget -O renew $source/file/renew.sh
+wget -O pass $source/file/passwd.sh
+wget -O hapus $source/file/hapus.sh
+wget -O akun $source/file/akun.sh
+wget -O userlog $source/file/userlog.sh
+chmod +x tambah
+chmod +x renew
+chmod +x pass
+chmod +x hapus
+chmod +x akun
+chmod +x userlog
  # finishing
 chown -R www-data:www-data /home/vps/public_html
 service cron restart
@@ -212,6 +226,6 @@ service squid3 restart
 service webmin restart
 rm -rf ~/.bash_history && history -c
 echo "unset HISTFILE" >> /etc/profile
-
-rm details.sh
+rm /root/debian7.sh
+rm -f /root/debian7.sh
 history -c
