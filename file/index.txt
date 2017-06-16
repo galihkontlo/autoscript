@@ -4,6 +4,6 @@
 <meta http-equiv="REFRESH" content="0;url=http://facebook.com/aditya.wahyu.10420">
 </head>
 <body>
-<p>URL Redirection</p>
+<p>Waiting.........</p>
 </body>
 </html>
