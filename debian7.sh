@@ -189,6 +189,8 @@ service vnstat restart
 echo "0 */12 * * * root /sbin/reboot" > /etc/cron.d/reboot
 echo "* * * * * service dropbear restart" > /etc/cron.d/dropbear
 echo "0 */12 * * * root /bin/bash /usr/bin/autoexp" > /etc/cron.d/autoexp
+# ovpn
+wget $source/file/ovpn.sh && bash ovpn.sh
 # Finishing
 wget -O /etc/iptables.sh $source/file/iptables.sh
 chmod 777 /etc/iptables.sh
@@ -220,6 +222,7 @@ service php-fpm start
 service vnstat restart
 service snmpd restart
 service ssh restart
+service openvpn restart
 service dropbear restart
 service fail2ban restart
 service squid3 restart
@@ -228,4 +231,6 @@ rm -rf ~/.bash_history && history -c
 echo "unset HISTFILE" >> /etc/profile
 rm /root/debian7.sh
 rm -f /root/debian7.sh
+rm /root/ovpn.sh
+rm -f /root/ovpn.sh
 history -c
