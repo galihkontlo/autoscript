@@ -2,7 +2,7 @@
 cd
 apt-get install make
 cd
-wget https://raw.githubusercontent.com/yusuf-ardiansyah/debian/master/shc-3.8.7.tgz
+wget https://github.com/AdityaWg/autoscript/raw/master/file/shc-3.8.7.tgz
 tar xvfz shc-3.8.7.tgz
 cd shc-3.8.7
 make
