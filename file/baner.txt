@@ -1,0 +1,7 @@
+echo "## SELAMAT DATANG DI SERVER SSH PREMIUM ## "
+echo "DENGAN MENGGUNAKAN LAYANAN SSH DARI SERVER INI BERARTI ANDA SETUJU SEGALA KETENTUAN YANG TELAH KAMI BUAT: "
+echo "1. Tidak Diperbolehkan Untuk Melakukan Aktifitas Ilegal Seperi DDoS, CARDING, HACKING, PHISING, SPAMMING, TORRENT Dan Aktifitas Ilegal Lainnya Menggunakan SSH Dari Server INI "
+echo "2. Maks login 2 BITVISE,PLINK,DEVICE, jika lebih dari itu maka akun otomatis DITENDANG oleh server(yang menyebabkan akun anda tidak konek); " >> /etc/pesan
+echo "3. jika kami mengetahui atau sistem mendeteksi pelanggaran maka akun akan DIHAPUS ! "
+echo "4. Tidak ada tolerasi/Refunded bagi pengguna yang melakukan pelanggaran "
+echo "TERIMA KASIH DAN SELAMAT MENGGUNAKAN"
