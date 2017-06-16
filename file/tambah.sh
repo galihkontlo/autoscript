@@ -21,7 +21,7 @@ echo -e "Squid Proxy: 3128,8000,8080"
 echo -e "Ovpn Config: http://$MYIP:81/client.ovpn"
 echo -e "Username: $1"
 echo -e "Password: $2"
-echo -e "Aktif Sampai: $(date -d "$AKTIF days" +"%d-%m-%Y")"
+echo -e "Aktif Sampai: $(date -d "$3 days" +"%d-%m-%Y")"
 echo -e "-------------------------------------"
 echo -e ""
 fi
