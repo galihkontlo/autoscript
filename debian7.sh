@@ -207,10 +207,23 @@ wget -O renew $source/file/renew.sh
 wget -O pass $source/file/passwd.sh
 wget -O hapus $source/file/hapus.sh
 wget -O akun $source/file/akun.sh
+wget -O bench "https://raw.githubusercontent.com/khairilg/script-jualan-ssh-vpn/master/bench-network.sh"
+wget -O mem "https://raw.githubusercontent.com/pixelb/ps_mem/master/ps_mem.py"
 wget -O userlog $source/file/userlog.sh
+wget -O expdel $source/file/expdel.sh
+wget -O tendang $source/file/tendang.sh
+wget -O trial $source/file/trial.sh
+wget -O speedtest $source/file/speedtest.py
+echo "speedtest --share" | tee speedtest
 chmod +x tambah
 chmod +x renew
+chmod +x expdel
+chmod +x speedtest
 chmod +x pass
+chmod +x tendang
+chmod +x trial
+chmod +x mem
+chmod +x bench
 chmod +x hapus
 chmod +x akun
 chmod +x userlog
